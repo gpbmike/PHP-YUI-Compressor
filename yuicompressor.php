@@ -30,7 +30,7 @@ class YUICompressor
     // set one of the YUI compressor options
     function setOption($option, $value)
     {
-        $this->option[$option] = $value;
+        $this->options[$option] = $value;
     }
 
     // add a file (absolute path) to be compressed
