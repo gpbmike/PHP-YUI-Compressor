@@ -59,6 +59,7 @@ class YUICompressor
         $file = $this->TEMP_FILES_DIR . '/' . $input_hash . '.txt';
         $fh = fopen($file, 'w') or die("Can't create new file");
         fwrite($fh, $this->string);
+        fclose($fh);
     	
     	// start with basic command
         $cmd = "java -Xmx32m -jar " . $this->JAR_PATH . ' ' . $file . " --charset UTF-8";
