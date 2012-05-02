@@ -62,7 +62,7 @@ class YUICompressor
         fclose($fh);
     	
     	// start with basic command
-        $cmd = "java -Xmx32m -jar " . $this->JAR_PATH . ' ' . $file . " --charset UTF-8";
+        $cmd = "java -Xmx32m -jar " . escapeshellarg($this->JAR_PATH) . ' ' . escapeshellarg($file) . " --charset UTF-8";
     
         // set the file type
     	$cmd .= " --type " . (strtolower($this->options['type']) == "css" ? "css" : "js");
