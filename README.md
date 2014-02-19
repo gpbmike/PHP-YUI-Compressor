@@ -1,3 +1,5 @@
+**I do not actively maintain this repository. There are a couple of forks that might work for you.**
+
 # How to use
 
     // INCLUDE COMPRESSOR CLASS
